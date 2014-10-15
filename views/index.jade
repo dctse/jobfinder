@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+        div(ng-controller='testCtrl')
+            .list-group
+                a.list-group-item(href='#')(ng-repeat="job in jobs")
+                    h4.list-group-item-heading {{ job.title }}
+                    p.list-group-item-text {{ job.description }}
