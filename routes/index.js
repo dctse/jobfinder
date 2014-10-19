@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var mongoose = require('mongoose');
-var jobModel = require('../models/Job');
+var JobsData = require("../jobs-data.js");
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -9,10 +8,8 @@ router.get('/', function(req, res) {
 });
 
 router.get('/api/jobs', function(req, res) {
-    mongoose.model('Job').find({}).exec(function(error,collection) {
+    JobsData.findJobs().then(function(collection) {
         res.send(collection);
     });
-
-//    res.render('index', { title: 'Web API Continuous Integration and Test - Danny' });
 });
 module.exports = router;

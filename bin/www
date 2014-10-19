@@ -3,12 +3,12 @@ var debug = require('debug')('jobfinders');
 var app = require('../app');
 var mongoose = require('mongoose');
 var jobmodel = require('../models/Job');
+var JobsData = require("../jobs-data.js");
 
 //mongoose.connect('mongodb://localhost/jobfinder');
-mongoose.connect('mongodb://scrumdan:abc123@ds039960.mongolab.com:39960/mongogo');
-var con = mongoose.connection;
-con.once('open', function(){
-    jobmodel.seedJobs();
+JobsData.connectDB('mongodb://scrumdan:abc123@ds039960.mongolab.com:39960/mongogo')
+.then(function(){
+    JobsData.seedJobs();
     console.log('connected to mongodb successfully!');
 });
 
