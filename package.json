@@ -21,6 +21,7 @@
     "chai": "^1.9.2",
     "karma-chrome-launcher": "^0.1.5",
     "karma-phantomjs-launcher": "^0.1.4",
-    "phantomjs": "^1.9.11"
+    "phantomjs": "^1.9.11",
+    "supertest": "^0.14.0"
   }
 }
