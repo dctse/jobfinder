@@ -1,0 +1,224 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'phantomjs',
+1 verbose cli   'phantomjs-launcher' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json karma-chrome-launcher@0.1.5 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'phantomjs', null ]
+8 verbose cache add name=undefined spec="phantomjs" args=["phantomjs",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'phantomjs',
+9 verbose parsed url   path: 'phantomjs',
+9 verbose parsed url   href: 'phantomjs' }
+10 verbose cache add [ 'phantomjs-launcher', null ]
+11 verbose cache add name=undefined spec="phantomjs-launcher" args=["phantomjs-launcher",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'phantomjs-launcher',
+12 verbose parsed url   path: 'phantomjs-launcher',
+12 verbose parsed url   href: 'phantomjs-launcher' }
+13 silly lockFile 30d7cd7d-phantomjs phantomjs
+14 verbose lock phantomjs C:\Users\Michiko\AppData\Roaming\npm-cache\30d7cd7d-phantomjs.lock
+15 silly lockFile c445733c-phantomjs-launcher phantomjs-launcher
+16 verbose lock phantomjs-launcher C:\Users\Michiko\AppData\Roaming\npm-cache\c445733c-phantomjs-launcher.lock
+17 silly lockFile 30d7cd7d-phantomjs phantomjs
+18 silly lockFile 30d7cd7d-phantomjs phantomjs
+19 silly lockFile c445733c-phantomjs-launcher phantomjs-launcher
+20 silly lockFile c445733c-phantomjs-launcher phantomjs-launcher
+21 verbose addNamed [ 'phantomjs', '' ]
+22 verbose addNamed [ null, '*' ]
+23 silly lockFile 29cf7fd6-phantomjs phantomjs@
+24 verbose lock phantomjs@ C:\Users\Michiko\AppData\Roaming\npm-cache\29cf7fd6-phantomjs.lock
+25 verbose addNamed [ 'phantomjs-launcher', '' ]
+26 verbose addNamed [ null, '*' ]
+27 silly lockFile 72b95a72-phantomjs-launcher phantomjs-launcher@
+28 verbose lock phantomjs-launcher@ C:\Users\Michiko\AppData\Roaming\npm-cache\72b95a72-phantomjs-launcher.lock
+29 silly addNameRange { name: 'phantomjs', range: '*', hasData: false }
+30 verbose request where is /phantomjs
+31 verbose request registry http://registry.npmjs.org/
+32 verbose request id 8bb6b6ad551b163c
+33 verbose url raw /phantomjs
+34 verbose url resolving [ 'http://registry.npmjs.org/', './phantomjs' ]
+35 verbose url resolved http://registry.npmjs.org/phantomjs
+36 verbose request where is http://registry.npmjs.org/phantomjs
+37 info trying registry request attempt 1 at 14:05:52
+38 http GET http://registry.npmjs.org/phantomjs
+39 silly addNameRange { name: 'phantomjs-launcher', range: '*', hasData: false }
+40 verbose request where is /phantomjs-launcher
+41 verbose request registry http://registry.npmjs.org/
+42 verbose url raw /phantomjs-launcher
+43 verbose url resolving [ 'http://registry.npmjs.org/', './phantomjs-launcher' ]
+44 verbose url resolved http://registry.npmjs.org/phantomjs-launcher
+45 verbose request where is http://registry.npmjs.org/phantomjs-launcher
+46 info trying registry request attempt 1 at 14:05:52
+47 http GET http://registry.npmjs.org/phantomjs-launcher
+48 http 404 http://registry.npmjs.org/phantomjs-launcher
+49 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+49 verbose headers   'content-type': 'application/json',
+49 verbose headers   'cache-control': 'max-age=0',
+49 verbose headers   'content-length': '52',
+49 verbose headers   'accept-ranges': 'bytes',
+49 verbose headers   date: 'Mon, 20 Oct 2014 06:06:08 GMT',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   age: '0',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'x-served-by': 'cache-hk90-HKG',
+49 verbose headers   'x-cache': 'MISS',
+49 verbose headers   'x-cache-hits': '0',
+49 verbose headers   'x-timer': 'S1413785167.573310,VS0,VE735' }
+50 silly registry.get cb [ 404,
+50 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+50 silly registry.get     'content-type': 'application/json',
+50 silly registry.get     'cache-control': 'max-age=0',
+50 silly registry.get     'content-length': '52',
+50 silly registry.get     'accept-ranges': 'bytes',
+50 silly registry.get     date: 'Mon, 20 Oct 2014 06:06:08 GMT',
+50 silly registry.get     via: '1.1 varnish',
+50 silly registry.get     age: '0',
+50 silly registry.get     connection: 'keep-alive',
+50 silly registry.get     'x-served-by': 'cache-hk90-HKG',
+50 silly registry.get     'x-cache': 'MISS',
+50 silly registry.get     'x-cache-hits': '0',
+50 silly registry.get     'x-timer': 'S1413785167.573310,VS0,VE735' } ]
+51 silly lockFile 72b95a72-phantomjs-launcher phantomjs-launcher@
+52 silly lockFile 72b95a72-phantomjs-launcher phantomjs-launcher@
+53 http 200 http://registry.npmjs.org/phantomjs
+54 silly registry.get cb [ 200,
+54 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+54 silly registry.get     etag: '"6QI11289XI2BRY79FVR8JLZHF"',
+54 silly registry.get     'content-type': 'application/json',
+54 silly registry.get     'cache-control': 'max-age=60',
+54 silly registry.get     'content-length': '88028',
+54 silly registry.get     'accept-ranges': 'bytes',
+54 silly registry.get     date: 'Mon, 20 Oct 2014 06:06:08 GMT',
+54 silly registry.get     via: '1.1 varnish',
+54 silly registry.get     age: '0',
+54 silly registry.get     connection: 'keep-alive',
+54 silly registry.get     'x-served-by': 'cache-hk91-HKG',
+54 silly registry.get     'x-cache': 'HIT',
+54 silly registry.get     'x-cache-hits': '1',
+54 silly registry.get     'x-timer': 'S1413785167.545335,VS0,VE734',
+54 silly registry.get     vary: 'Accept' } ]
+55 silly addNameRange number 2 { name: 'phantomjs', range: '*', hasData: true }
+56 silly addNameRange versions [ 'phantomjs',
+56 silly addNameRange   [ '0.0.1',
+56 silly addNameRange     '0.0.2',
+56 silly addNameRange     '0.0.3',
+56 silly addNameRange     '0.0.4',
+56 silly addNameRange     '0.0.5',
+56 silly addNameRange     '0.0.6',
+56 silly addNameRange     '0.0.7',
+56 silly addNameRange     '0.0.8',
+56 silly addNameRange     '0.0.9',
+56 silly addNameRange     '0.1.0',
+56 silly addNameRange     '0.1.1',
+56 silly addNameRange     '0.2.0',
+56 silly addNameRange     '0.2.1',
+56 silly addNameRange     '0.2.2',
+56 silly addNameRange     '0.2.3',
+56 silly addNameRange     '0.2.4',
+56 silly addNameRange     '0.2.5',
+56 silly addNameRange     '0.2.6',
+56 silly addNameRange     '1.8.0-1',
+56 silly addNameRange     '1.8.1-1',
+56 silly addNameRange     '1.8.1-2',
+56 silly addNameRange     '1.8.1-3',
+56 silly addNameRange     '1.8.2-0',
+56 silly addNameRange     '1.8.2-1',
+56 silly addNameRange     '1.8.2-2',
+56 silly addNameRange     '1.9.0-0',
+56 silly addNameRange     '1.9.0-1',
+56 silly addNameRange     '1.9.0-2',
+56 silly addNameRange     '1.9.0-3',
+56 silly addNameRange     '1.9.0-4',
+56 silly addNameRange     '1.9.0-5',
+56 silly addNameRange     '1.9.0-6',
+56 silly addNameRange     '1.9.1-0',
+56 silly addNameRange     '1.9.1-2',
+56 silly addNameRange     '1.9.1-3',
+56 silly addNameRange     '1.9.1-4',
+56 silly addNameRange     '1.9.1-5',
+56 silly addNameRange     '1.9.1-6',
+56 silly addNameRange     '1.9.1-7',
+56 silly addNameRange     '1.9.1-8',
+56 silly addNameRange     '1.9.1-9',
+56 silly addNameRange     '1.9.2-0',
+56 silly addNameRange     '1.9.2-1',
+56 silly addNameRange     '1.9.2-2',
+56 silly addNameRange     '1.9.2-3',
+56 silly addNameRange     '1.9.2-4',
+56 silly addNameRange     '1.9.2-5',
+56 silly addNameRange     '1.9.2-6',
+56 silly addNameRange     '1.9.6-0',
+56 silly addNameRange     '1.9.7-1',
+56 silly addNameRange     '1.9.7-3',
+56 silly addNameRange     '1.9.7-4',
+56 silly addNameRange     '1.9.7-5',
+56 silly addNameRange     '1.9.7-6',
+56 silly addNameRange     '1.9.7-7',
+56 silly addNameRange     '1.9.7-8',
+56 silly addNameRange     '1.9.7-9',
+56 silly addNameRange     '1.9.7-10',
+56 silly addNameRange     '1.9.7-11',
+56 silly addNameRange     '1.9.7-12',
+56 silly addNameRange     '1.9.7-13',
+56 silly addNameRange     '1.9.7-14',
+56 silly addNameRange     '1.9.7-15',
+56 silly addNameRange     '1.8.2-3',
+56 silly addNameRange     '1.9.8',
+56 silly addNameRange     '1.9.9',
+56 silly addNameRange     '1.9.10',
+56 silly addNameRange     '1.9.11' ] ]
+57 verbose addNamed [ 'phantomjs', '1.9.11' ]
+58 verbose addNamed [ '1.9.11', '1.9.11' ]
+59 silly lockFile a2d4711c-phantomjs-1-9-11 phantomjs@1.9.11
+60 verbose lock phantomjs@1.9.11 C:\Users\Michiko\AppData\Roaming\npm-cache\a2d4711c-phantomjs-1-9-11.lock
+61 silly lockFile be902977-g-phantomjs-phantomjs-1-9-11-tgz http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.11.tgz
+62 verbose lock http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.11.tgz C:\Users\Michiko\AppData\Roaming\npm-cache\be902977-g-phantomjs-phantomjs-1-9-11-tgz.lock
+63 verbose addRemoteTarball [ 'http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.11.tgz',
+63 verbose addRemoteTarball   'de822affca7858382b6ab9c931ba4541e5b8a0ae' ]
+64 info retry fetch attempt 1 at 14:05:56
+65 verbose fetch to= C:\Users\Michiko\AppData\Local\Temp\npm-7984-Z3u4AI08\registry.npmjs.org\phantomjs\-\phantomjs-1.9.11.tgz
+66 http GET http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.11.tgz
+67 http 200 http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.11.tgz
+68 silly lockFile be902977-g-phantomjs-phantomjs-1-9-11-tgz http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.11.tgz
+69 silly lockFile be902977-g-phantomjs-phantomjs-1-9-11-tgz http://registry.npmjs.org/phantomjs/-/phantomjs-1.9.11.tgz
+70 silly lockFile a2d4711c-phantomjs-1-9-11 phantomjs@1.9.11
+71 silly lockFile a2d4711c-phantomjs-1-9-11 phantomjs@1.9.11
+72 silly lockFile 29cf7fd6-phantomjs phantomjs@
+73 silly lockFile 29cf7fd6-phantomjs phantomjs@
+74 error 404 404 Not Found: phantomjs-launcher
+74 error 404
+74 error 404 'phantomjs-launcher' is not in the npm registry.
+74 error 404 You should bug the author to publish it
+74 error 404 It was specified as a dependency of 'jobfinders'
+74 error 404
+74 error 404 Note that you can also install from a
+74 error 404 tarball, folder, or http url, or git url.
+75 error System Windows_NT 6.2.9200
+76 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "phantomjs" "phantomjs-launcher"
+77 error cwd C:\Users\Michiko\WebstormProjects\jobfinders
+78 error node -v v0.10.32
+79 error npm -v 1.4.28
+80 error code E404
+81 verbose exit [ 1, true ]

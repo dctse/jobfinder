@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 var jobmodel = require('../models/Job');
 var JobsData = require("../jobs-data.js");
 
+//TODO hide connection string and password to other area
 //mongoose.connect('mongodb://localhost/jobfinder');
 JobsData.connectDB('mongodb://scrumdan:abc123@ds039960.mongolab.com:39960/mongogo')
 .then(function(){
