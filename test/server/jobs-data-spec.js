@@ -18,7 +18,7 @@ describe("DB Layer get jobs - directly with mongoose", function(){
     before(function(done){
         JobsData.connectDB('mongodb://localhost/jobfinder')
             .then(resetJobs)
-//            .then(JobsData.seedJobs)
+            .then(JobsData.seedJobs)
             .then(function(){return JobsData.saveJob(job)})
             .then(JobsData.findJobs)
             .then(function setJobs(collection) {
@@ -26,11 +26,11 @@ describe("DB Layer get jobs - directly with mongoose", function(){
                 done();
             });
 
-    })
+    });
 
-    after(function(){
-        mongoose.connection.close();
-    })
+//    after(function(){
+//        mongoose.connection.close();
+//    })
 
     it("should always be job since they are seeded", function() {
         expect(jobs.length).to.be.at.least(1);

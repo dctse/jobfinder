@@ -8,11 +8,7 @@ var dataSavedJob;
 
 var db = {
     saveJob: function(job) {
-//        if (job.title.length<4 || job.title.length >40) {
-//            dataSavedJob = {};
-//        } else {
             dataSavedJob = job;
-//        }
     },
     findJobs: function() {
         return new Promise(function(resolve, reject){
@@ -35,41 +31,11 @@ describe("Server Service Get Jobs via data layer without knowing mongoose", func
 });
 
 describe("Server Save Job", function (){
-
-    var job = {"title":'Cook', "description":'You will be making steaks'};
-    var jobs;
-
-//    before(function(done){
-//        JobsData.connectDB('mongodb://localhost/jobfinder')
-//            .then(resetJobs)
-////            .then(JobsData.seedJobs)
-//            .then(function(){JobsData.saveJob(job)})
-//            .then(JobsData.findJobs)
-//            .then(function setJobs(collection) {
-//                jobs=collection;
-//                done();
-//            });
-//
-//    })
-
-//    after(function(){
-//        JobsData.connection.close();
-//    })
-
     var newJob =  {"title":'Coo', "description":'You will be making steaks 1'};
     it("should validate title that should have more than 4 characters.");
-//    it("should validate title that should have more than 4 characters.", function(done){
-//        request(app).post('/api/jobs').send(newJob).end(function (err, res) {
-//            expect(dataSavedJob).to.have.length(1);
-//            done();
-//        });
-//    });
     it("should validate title that should have less than 40 characters.");
     it("should validate description that should have more than 4 characters.");
     it("should validate description that should have less than 250 characters.");
-
-    var newJob =  {"title":'Cook', "description":'You will be making steaks 1'};
-
     it("should save to database as http post to server layer", function(done) {
         request(app).post('/api/jobs').send(newJob).end(function (err, res) {
             expect(dataSavedJob).to.deep.equal(newJob);
@@ -77,7 +43,6 @@ describe("Server Save Job", function (){
         });
     });
     it("should pass status 200 to client if saved to database.");
-
     it("should return a job id if saved.");
     it("should return error if not saved to database.");
 });

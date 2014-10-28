@@ -1,8 +1,14 @@
 var express = require('express');
+var session = require('express-session');
+//var MongoStore = require('connect-mongo')(session);
+
+var SendGrid = require('sendgrid').SendGrid;
+var Validator = require('validator').Validator;
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+//var csrf = require('csurf');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
@@ -20,10 +26,17 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+//app.use(session({secret: 'fengfengcrazy',store: new MongoStore({
+//    db : 'sessiontable'}), cookie: {httpOnly: true} }));
+app.use(session({secret: 'fengfengcrazy' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+//app.use(csrf());
 app.use('/', routes);
+
 app.use('/users', users);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -32,6 +45,13 @@ app.use(function(req, res, next) {
     next(err);
 });
 
+// error handler to console log
+sendgrid = {
+    send: function(opts, cb) {
+        console.log('Email:', opts);
+        cb(true, opts);
+    }
+};
 // error handlers
 
 // development error handler

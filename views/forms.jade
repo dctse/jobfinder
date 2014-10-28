@@ -1,0 +1,47 @@
+//
+   Created by Danny on 10/24/2014.
+doctype html
+html
+    head
+        title= form
+        //link(rel='stylesheet', href='/stylesheets/style.css')
+
+    body
+        h1 Embedded script
+        -var env='dev';
+        -if(env==='dev') {
+            p this is a development Env
+        - } else {
+            p we are in production env.
+        - }
+        form(method='POST', action='/')
+        table
+            tr
+                td
+                    label(for='name') Name
+                td
+                    input(name='name',id='Name')
+            tr
+                td
+                    label(for='email') Email
+                td
+                    input(type='email',id='email')
+            tr
+                td
+                    label(for='password') Password
+                td
+                    input(type='password',id='password')
+            tr
+                td
+                    label(for='type') Type
+                td
+                    select(name='type')
+                        option(value='dev') Developer
+                        option(value='test') Tester
+                        option(value='pm') Project Manager
+            tr
+                td
+                    label(for='signup') Available?
+                td
+                    input(type='checkbox', id='available', checked)
+        input(type='submit', value='Create')
